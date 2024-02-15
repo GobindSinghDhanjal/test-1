@@ -1,10 +1,11 @@
 const express = require("express");
 const app = express();
 
-require('dotenv').config();
+require("dotenv").config();
 
 app.get("/", (req, res) => {
-  res.send("Express on Vercel",process.env.HELLO);
+  const str = "heelo " + process.env.HELLO;
+  res.send(str);
 });
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
