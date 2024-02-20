@@ -1,17 +1,17 @@
 const express = require("express");
 const app = express();
-// const mongoose = require("mongoose");
-// const cors = require("cors");
+const mongoose = require("mongoose");
+const cors = require("cors");
 
 require("dotenv").config();
 
-// const corsOptions = {
-//   origin: "*",
-//   credentials: true,
-//   optionSuccessStatus: 200,
-// };
+const corsOptions = {
+  origin: "*",
+  credentials: true,
+  optionSuccessStatus: 200,
+};
 
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
 // mongoose
 //   .connect(process.env.MONGO_DB_URI)
