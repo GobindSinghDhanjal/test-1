@@ -5,11 +5,13 @@ const cors = require("cors");
 
 require("dotenv").config();
 
-// const corsOptions = {
-//   origin: "*",
-//   credentials: true,
-//   optionSuccessStatus: 200,
-// };
+const corsOptions = {
+  origin: "*",
+  credentials: true,
+  optionSuccessStatus: 200,
+};
+
+//comment
 
 app.use(cors(corsOptions));
 
