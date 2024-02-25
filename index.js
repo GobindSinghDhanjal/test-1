@@ -1,15 +1,15 @@
 const express = require("express");
 const app = express();
-// const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 const cors = require("cors");
 
 require("dotenv").config();
 
-const corsOptions = {
-  origin: "*",
-  credentials: true,
-  optionSuccessStatus: 200,
-};
+// const corsOptions = {
+//   origin: "*",
+//   credentials: true,
+//   optionSuccessStatus: 200,
+// };
 
 app.use(cors(corsOptions));
 
